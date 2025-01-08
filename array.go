@@ -48,4 +48,9 @@ func main() {
 	for name, value := range m { // NOTE: order is not guaranteed in maps
 		fmt.Printf("Name: %v Value: %v \n", name, value)
 	}
+
+	// for loop
+	for i := 0; i < 5; i++ {
+		println(i)
+	}
 }
