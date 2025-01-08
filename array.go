@@ -20,4 +20,10 @@ func main() {
 	// Array of arrays
 	arr3 := [2][2]int{{1, 2}, {3, 4}}
 	println(arr3[0][0], arr3[0][1], arr3[1][0], arr3[1][1])
+
+	// Slice
+	slice := []int{1, 2, 3, 4, 5}
+	println(slice[0], slice[1], slice[2], slice[3], slice[4])
+	slice = append(slice, 6)
+	println(slice)
 }
