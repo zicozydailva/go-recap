@@ -24,6 +24,11 @@ func main() {
 	// Slice
 	slice := []int{1, 2, 3, 4, 5}
 	println(slice[0], slice[1], slice[2], slice[3], slice[4])
+	println("The length is %v with capacity %v\n",len(slice), cap(slice))
 	slice = append(slice, 6)
+	println("The length is %v with capacity %v",len(slice), cap(slice))
 	println(slice)
+
+	var createCapacity = make([]int, 5, 5)
+	println("The length is %v with capacity %v",len(createCapacity), cap(createCapacity))
 }
