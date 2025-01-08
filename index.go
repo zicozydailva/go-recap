@@ -22,10 +22,6 @@ func main() {
 
 }
 
-func printMe(printVal string) {
-	fmt.Println(printVal)
-}
-
 func intDivision(numerator int, demonimator int) (int, int, error) {
 	var err error
 	if demonimator == 0 {
