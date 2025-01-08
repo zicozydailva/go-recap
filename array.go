@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 	// Array
 	var arr [5]int
@@ -24,19 +28,24 @@ func main() {
 	// Slice
 	slice := []int{1, 2, 3, 4, 5}
 	println(slice[0], slice[1], slice[2], slice[3], slice[4])
-	println("The length is %v with capacity %v\n",len(slice), cap(slice))
+	fmt.Printf("The length is %v with capacity %v\n", len(slice), cap(slice))
 	slice = append(slice, 6)
-	println("The length is %v with capacity %v",len(slice), cap(slice))
+	fmt.Printf("The length is %v with capacity %v", len(slice), cap(slice))
 	println(slice)
 
 	var createCapacity = make([]int, 5, 5)
-	println("The length is %v with capacity %v",len(createCapacity), cap(createCapacity))
+	fmt.Printf("The length is %v with capacity %v", len(createCapacity), cap(createCapacity))
 
 	// maps
 	m := map[string]int{"one": 1, "two": 2, "three": 3}
-	println(m["one"], m["two"], m["three"], m["four"]) // get 0 if key not found 
+	println(m["one"], m["two"], m["three"], m["four"]) // get 0 if key not found
 
 	//delete key
-	delete(m, "one")
-	println(m["one"], m["two"], m["three"], m["four"]) // get 0 if key not found
+	// delete(m, "one")
+	// println(m["one"], m["two"], m["three"], m["four"]) // get 0 if key not found
+
+	// loops
+	for name, value := range m { // NOTE: order is not guaranteed in maps
+		fmt.Printf("Name: %v Value: %v \n", name, value)
+	}
 }
