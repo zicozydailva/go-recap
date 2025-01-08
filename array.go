@@ -35,4 +35,8 @@ func main() {
 	// maps
 	m := map[string]int{"one": 1, "two": 2, "three": 3}
 	println(m["one"], m["two"], m["three"], m["four"]) // get 0 if key not found 
+
+	//delete key
+	delete(m, "one")
+	println(m["one"], m["two"], m["three"], m["four"]) // get 0 if key not found
 }
