@@ -14,9 +14,18 @@ func main() {
 		fmt.Printf(err.Error())
 	} else if remainder == 0 {
 		fmt.Printf("The result of the integer division is %v", result)
-
 	} else {
+		fmt.Printf("The result of the integer division is %v with remainder %v", result, remainder)
+	}
 
+	// USING SWITCH STATEMENT
+
+	switch {
+	case err != nil:
+		fmt.Printf(err.Error())
+	case remainder == 0:
+		fmt.Printf("The result of the integer division is %v", result)
+	default:
 		fmt.Printf("The result of the integer division is %v with remainder %v", result, remainder)
 	}
 
