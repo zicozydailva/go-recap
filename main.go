@@ -15,6 +15,7 @@ func main() {
 	newVar := "testing"; // shorthand
 
 	var var1, var2 = 1,2 // init multiple variables
+	var3, var4 := 10, 20; // shorthand
 
 	fmt.Println("Hello World", intNum)
 	fmt.Println("Hello World", floatNum)
@@ -25,6 +26,8 @@ func main() {
 	fmt.Println("Hello World", newVar)
 	fmt.Println("Hello World", var1)
 	fmt.Println("Hello World", var2)
+	fmt.Println("Hello World", var3)
+	fmt.Println("Hello World", var4)
 	fmt.Println("Hello World", len("Y")) // length in bytes
 	fmt.Println("Hello World", utf8.RuneCountInString("Y")) // length
 }
